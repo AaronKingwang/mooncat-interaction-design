@@ -35,6 +35,38 @@ mooncat-interaction-design/
     └── review-checklist.md           # 评审七维度打分 + 问题清单模板
 ```
 
+## 安装
+
+本 skill 基于开放的 [Agent Skills](https://agentskills.io) 协议，可在任何 skills-compatible 的 AI agent runtime 中运行。
+
+### 方式一：一句话安装（推荐）
+
+打开你正在用的 agent（Claude Code、Codex、Cursor、OpenClaw 等），告诉它：
+
+```
+帮我安装这个 skill：https://github.com/AaronKingwang/mooncat-interaction-design
+```
+
+或使用通用 CLI 安装器 [`vercel-labs/skills`](https://github.com/vercel-labs/skills)：
+
+```bash
+npx skills add AaronKingwang/mooncat-interaction-design
+```
+
+### 方式二：手动安装
+
+| Runtime | 安装路径 |
+|---|---|
+| Claude Code | `~/.claude/skills/mooncat-interaction-design/` |
+| Codex CLI | `~/.codex/skills/mooncat-interaction-design/` |
+| Cursor | `~/.cursor/skills/mooncat-interaction-design/` |
+| OpenClaw | `~/.openclaw/workspace/skills/mooncat-interaction-design/` |
+| 其他 runtime | 对应 runtime 的 `skills/` 目录 |
+
+```bash
+git clone https://github.com/AaronKingwang/mooncat-interaction-design.git <上面对应路径>
+```
+
 ## 用法
 
 - 设计时：跑 SKILL.md「四步法」→ 查 `bend-scenarios.md` 对应场景 → 用「通用原则清单」自查。
